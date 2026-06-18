@@ -113,70 +113,16 @@ The reproduced implementation demonstrates strong predictive performance for CKD
 
 Best-performing models:
 
-| Model         | Accuracy |
-| ------------- | -------- |
-| LightGBM      | ~99%+    |
-| XGBoost       | ~99%+    |
-| Random Forest | ~99%+    |
+| Model              | Accuracy |
+| -------------      | -------- |
+| Gradient boost     | 98.75    |
+| AdaBoost           | 98.75    |
+| Random Forest      | 98.75    |
+| Bagging            | 98.75    |
 
+mean accuracy: 98.6
+final accuracy(after tuning): 98.75
 Performance may vary slightly depending on preprocessing choices, train-test splits, and random seeds.
-
-## Project Structure
-
-```text
-ckd-detection/
-│
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── notebooks/
-│   ├── EDA.ipynb
-│   ├── Feature_Selection.ipynb
-│   └── Model_Training.ipynb
-│
-├── src/
-│   ├── preprocessing/
-│   ├── feature_selection/
-│   ├── balancing/
-│   ├── models/
-│   └── evaluation/
-│
-├── results/
-│
-├── requirements.txt
-└── README.md
-```
-
-## Installation
-
-```bash
-git clone https://github.com/yourusername/ckd-detection.git
-
-cd ckd-detection
-
-pip install -r requirements.txt
-```
-
-## Usage
-
-Train all models:
-
-```bash
-python train.py
-```
-
-Evaluate saved models:
-
-```bash
-python evaluate.py
-```
-
-Generate predictions:
-
-```bash
-python predict.py
-```
 
 ## Tech Stack
 
