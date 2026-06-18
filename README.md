@@ -120,8 +120,8 @@ Best-performing models:
 | Random Forest      | 98.75    |
 | Bagging            | 98.75    |
 
-mean accuracy: 98.6
-final accuracy(after tuning): 98.75
+mean accuracy: 98.6<br>
+final accuracy(after tuning): 98.75<br>
 Performance may vary slightly depending on preprocessing choices, train-test splits, and random seeds.
 
 ## Tech Stack
